@@ -4,7 +4,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
-const materials = [MatButtonModule,MatToolbarModule,MatIconModule,MatFormFieldModule]
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+const materials = [MatButtonModule,MatToolbarModule,MatIconModule,
+  MatFormFieldModule,MatTabsModule,MatCardModule,MatInputModule]
 
 @NgModule({
   declarations: [],

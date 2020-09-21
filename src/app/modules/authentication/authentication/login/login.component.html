@@ -1,0 +1,84 @@
+<app-header></app-header>
+<div class="container">
+    <mat-card class="card">
+        <mat-card-title>Login/Register</mat-card-title>
+        <mat-tab-group mat-align-tabs="start">
+            <mat-tab label="Login">
+                <mat-card-content class="card-content">
+                    <b><h3>Welcome to ArtBar</h3></b>
+                    <h4>Find whatever you are looking for and share your art too!</h4>
+                    <form >
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="text" 
+                          name="email"
+                          matInput 
+                          placeholder="Email" 
+                          ngModel
+                          required>
+                        </mat-form-field>
+                      </p>
+            
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="password" name="password"
+                          matInput placeholder="Password" ngModel required>
+                        </mat-form-field>
+                      </p>            
+                      <div class="button">
+                        <button type="submit" mat-button>Login</button>
+                      </div>
+            
+                    </form>
+                  </mat-card-content>
+            </mat-tab>
+            <mat-tab label="Register">
+                <mat-card-content class="card-content">
+                    <form >
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="text" 
+                          name="fname"
+                          matInput 
+                          placeholder="First Name" 
+                          ngModel
+                          required>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="text" 
+                          name="lname"
+                          matInput 
+                          placeholder="Last Name" 
+                          ngModel
+                          required>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="text" 
+                          name="email"
+                          matInput 
+                          placeholder="Email" 
+                          ngModel
+                          required>
+                        </mat-form-field>
+                      </p>
+                      <p>
+                        <mat-form-field class="form-field">
+                          <input type="password" name="password"
+                          matInput placeholder="Password" ngModel required>
+                        </mat-form-field>
+                      </p>            
+                      <div class="button">
+                        <button type="submit" mat-button>Login</button>
+                      </div>
+            
+                    </form>
+                  </mat-card-content>
+            </mat-tab>
+          </mat-tab-group>
+    </mat-card>
+</div>
+
