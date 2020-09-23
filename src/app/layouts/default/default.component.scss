@@ -1,0 +1,34 @@
+.preheader{
+    text-align: center;
+    padding: 140px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://media.artsper.com/homepage/mainImageDesktop.jpg);
+}
+.preheader h1 {
+    text-shadow: 0 0 10px #7e7e7e;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Apercubold',Arial,sans-serif;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.preheader h1 span {
+    display: block;
+    color: #fff;
+    padding-top: 30px;
+    font-size: 28px;
+    font-family: 'Apercu',Arial,sans-serif;
+}
+
+.btn{
+    width: 280px;
+}
+.black {
+    background-color: #000;
+    color: #fff;
+}
+.inline-block {
+    display: inline-block !important;
+}
