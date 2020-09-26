@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import {DefaultModule} from './layouts/default/default.module';
-import {AuthenticationModule} from '../app/modules/authentication/authentication/authentication.module'
+import {AuthenticationModule} from '../app/modules/authentication/authentication/authentication.module';
 @NgModule({
   declarations: [
     AppComponent,

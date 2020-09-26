@@ -7,14 +7,17 @@
                 <mat-card-content class="card-content">
                     <b><h3>Welcome to ArtBar</h3></b>
                     <h4>Find whatever you are looking for and share your art too!</h4>
-                    <form >
+                    <form #loginForm="ngForm" (ngSubmit)="loginUser()">
+                      <mat-error *ngIf="msg">
+                        wrong credentiels <strong>re-entre your password and email</strong>
+                      </mat-error>
                       <p>
                         <mat-form-field class="form-field">
                           <input type="text" 
                           name="email"
                           matInput 
                           placeholder="Email" 
-                          ngModel
+                          [(ngModel)]="user.email"
                           required>
                         </mat-form-field>
                       </p>
@@ -22,7 +25,7 @@
                       <p>
                         <mat-form-field class="form-field">
                           <input type="password" name="password"
-                          matInput placeholder="Password" ngModel required>
+                          matInput placeholder="Password" [(ngModel)]="user.password" required>
                         </mat-form-field>
                       </p>            
                       <div class="button">

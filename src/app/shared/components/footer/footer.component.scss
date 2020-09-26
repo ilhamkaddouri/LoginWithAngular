@@ -36,6 +36,7 @@ h1{
     color: gray;
     font-size: 10px;
     text-align: justify;
+    width: 25%;
 }
 
 h2{
@@ -117,6 +118,6 @@ ul i{
 
 @media screen and (max-width : 600px){
     .footer-items{
-        width: 50%;
+        width: 100%;
     }
 }
