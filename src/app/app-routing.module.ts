@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {DefaultComponent} from './layouts/default/default.component'
-import {LoginComponent} from './modules/authentication/authentication/login/login.component'
-import {LoginsuccesComponent} from './modules/authentication/authentication/loginsucces/loginsucces.component'
+import { AuthGuard } from './core/guards/authguard.guard';
 const routes: Routes = [
   {
     path:'',
     component : DefaultComponent
    },
    {
-    path:'loginuser',
-    component : LoginComponent
-   },
-   {
+    path:'auth',
+    loadChildren : ()=>import('./authentication/authentication.module').then(m=> m.AuthenticationModule)
+  },
+  {
     path:'home',
-    component : LoginsuccesComponent
-   }
+    loadChildren : ()=>import('../app/home/home.module').then(m=> m.HomeModule),
+    canActivate:[AuthGuard]
+  }
    
 ];
 

@@ -1,16 +1,18 @@
 <app-header></app-header>
 <div class="container">
     <mat-card class="card">
-        <mat-card-title>Login/Register</mat-card-title>
+      <div class="div-form">
         <mat-tab-group mat-align-tabs="start">
             <mat-tab label="Login">
                 <mat-card-content class="card-content">
-                    <b><h3>Welcome to ArtBar</h3></b>
-                    <h4>Find whatever you are looking for and share your art too!</h4>
-                    <form #loginForm="ngForm" (ngSubmit)="loginUser()">
-                      <mat-error *ngIf="msg">
+                    <div> 
+                      <p class="title">Good to have you back at ArtBar!</p>
+                      <p>Find whatever you are looking for and share your art too!</p>
+                    </div> 
+                    <form (ngSubmit)="Login()">
+                       <mat-error *ngIf="msg">
                         wrong credentiels <strong>re-entre your password and email</strong>
-                      </mat-error>
+                      </mat-error> 
                       <p>
                         <mat-form-field class="form-field">
                           <input type="text" 
@@ -28,36 +30,25 @@
                           matInput placeholder="Password" [(ngModel)]="user.password" required>
                         </mat-form-field>
                       </p>            
-                      <div class="button">
-                        <button type="submit" mat-button>Login</button>
-                      </div>
+                      
+                      <button type="submit" class="button form-field" mat-button>Login</button>
             
                     </form>
+                    <p class="divider">
+                      -OU-
+                    </p>  
+                    <button type="submit" class="button-fb form-field" mat-button><mat-icon> facebook</mat-icon> Continue with Facebook</button>
+                    <button type="submit" class="button-google form-field" mat-button> <mat-icon>google</mat-icon> Continue with Google</button>
+                    
                   </mat-card-content>
             </mat-tab>
             <mat-tab label="Register">
                 <mat-card-content class="card-content">
-                    <form >
-                      <p>
-                        <mat-form-field class="form-field">
-                          <input type="text" 
-                          name="fname"
-                          matInput 
-                          placeholder="First Name" 
-                          ngModel
-                          required>
-                        </mat-form-field>
-                      </p>
-                      <p>
-                        <mat-form-field class="form-field">
-                          <input type="text" 
-                          name="lname"
-                          matInput 
-                          placeholder="Last Name" 
-                          ngModel
-                          required>
-                        </mat-form-field>
-                      </p>
+                    <div>
+                      <p class="title">Welcome to ArtBar!</p>
+                      <p>Find whatever you are looking for and share your art too!</p>
+                    </div>
+                    <form (ngSubmit)="Register()">
                       <p>
                         <mat-form-field class="form-field">
                           <input type="text" 
@@ -74,14 +65,19 @@
                           matInput placeholder="Password" ngModel required>
                         </mat-form-field>
                       </p>            
-                      <div class="button">
-                        <button type="submit" mat-button>Login</button>
-                      </div>
+                      <button type="submit" class="button form-field" mat-button>Create an account</button>
             
                     </form>
+                    <p class="divider">
+                      -OU-
+                    </p>  
+                    <button type="submit" class="button-fb form-field" mat-button><mat-icon> facebook</mat-icon> Connect with Facebook</button>
+                    <button type="submit" class="button-google form-field" mat-button> <mat-icon>google</mat-icon> Connect with Google</button>
+                    <div></div>
                   </mat-card-content>
             </mat-tab>
           </mat-tab-group>
+        </div>
     </mat-card>
 </div>
 

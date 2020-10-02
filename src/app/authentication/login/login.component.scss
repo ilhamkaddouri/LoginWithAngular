@@ -1,0 +1,92 @@
+.container{
+    background-color: white;
+}
+.card{
+    width: 600px;
+    height: 50%;
+    margin: auto;
+}
+
+.card-content{
+    margin: auto;
+    
+}
+
+.header-msg{
+    margin-top: 30px;
+}
+
+.title{
+    margin-top: 40px;
+    font-size: large;
+    color: black;
+    margin-left: 0;
+    
+}
+
+.is-invalid{
+    border-color: red;
+}
+.h3{
+    color: black;
+
+}
+.h4{
+    color: black;
+}
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+.button-div{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    outline: none;
+    margin-top: 30px;
+}
+
+.button-fb{
+    color: white;
+    background-color: #23345a;
+    
+   border-top: rgba(0,0,0,0.2);
+}
+
+.button-google{
+    background-color: white;
+    color: gray;
+    margin-top: 20px;
+}
+.mat-icon{
+    outline: gray;
+}
+.div-form{
+    text-align: center;
+    display: block;
+}
+
+.form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+}
+
+.form-field{
+    width: 70%;
+    height: 50px;
+    line-height: 38px;
+}
+
+.divider{
+    font-size: large;
+    margin-top: 20px;
+    display: block;
+}
